@@ -1,5 +1,7 @@
 package main
 
+import "fmt"
+
 const english_hello_prefix = "Hello, "
 const chinese_hello_prefix = "哈摟, "
 
@@ -26,5 +28,5 @@ func Hello(name string, language string) string {
 }
 
 func main() {
-
+	fmt.Println(Hello("NicX", "English"))
 }
