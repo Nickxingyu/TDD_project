@@ -5,7 +5,7 @@ import (
 )
 
 //Given a string s, find the length of the longest substring without repeating characters.
-func lengthOfLongestSubstring(input_string string) int {
+func LengthOfLongestSubstring(input_string string) int {
 	length := len(input_string)
 	if length <= 1 {
 		return length
