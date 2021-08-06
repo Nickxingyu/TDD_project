@@ -31,12 +31,12 @@ func TestArea(t *testing.T) {
 	t.Run("rectangle", func(t *testing.T) {
 		rectangle := Rectangle{10.0, 10.0}
 		want := 100.0
-		checkArea(t, rectangle, want)
+		checkArea(t, &rectangle, want)
 	})
 
 	t.Run("circle", func(t *testing.T) {
 		circle := Circle{10.0}
 		want := 314.1592653589793
-		checkArea(t, circle, want)
+		checkArea(t, &circle, want)
 	})
 }
