@@ -26,4 +26,14 @@ func TestArea(t *testing.T) {
 			t.Errorf("got = %v; want %v", got, want)
 		}
 	})
+
+	t.Run("circle", func(t *testing.T) {
+		circle := Circle{10.0}
+		got := circle.Area()
+		want := 314.16
+
+		if got != want {
+			t.Errorf("got = %v; want %v", got, want)
+		}
+	})
 }
