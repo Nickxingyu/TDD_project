@@ -1,9 +1,10 @@
 package shape
 
-func Perimeter(input []int) int {
-	var perimeter int
-	for _, v := range input {
-		perimeter += v
-	}
-	return perimeter
+type Rectangle struct {
+	Width  float64
+	Height float64
+}
+
+func Perimeter(shape Rectangle) float64 {
+	return 2 * (shape.Width + shape.Height)
 }
